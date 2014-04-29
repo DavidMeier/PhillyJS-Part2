@@ -1,10 +1,12 @@
 Ext.define('PhillyJS.view.Main', {
     extend: 'Ext.tab.Panel',
-    requires:[
-        'PhillyJS.view.UserForm'
-    ],
     xtype: 'app-main',
+    layout: 'fit',
     items:[{
-        xtype: 'userForm'
+        xtype: 'userForm',
+        action: 'add'
+    },{
+        xtype: 'userGrid',
+        title: 'Users'
     }]
 });

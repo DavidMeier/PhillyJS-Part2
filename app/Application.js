@@ -4,14 +4,21 @@ Ext.define('PhillyJS.Application', {
     extend: 'Ext.app.Application',
 
     views: [
-        // TODO: add views here
+        'UserForm',
+        'UserGrid',
+        'EditUserWindow'
     ],
 
     controllers: [
-        'AddUser'
+        'AddUser',
+        'EditUser'
     ],
 
     stores: [
-        // TODO: add stores here
+        'Users'
+    ],
+
+    models: [
+        'User'
     ]
 });

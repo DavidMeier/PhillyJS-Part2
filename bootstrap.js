@@ -852,8 +852,15 @@ Ext.ClassManager.addNameAlternateMappings({
     "Ext.Window"
   ],
   "PhillyJS.Application": [],
+  "PhillyJS.controller.AddUser": [],
+  "PhillyJS.controller.EditUser": [],
   "PhillyJS.controller.Main": [],
+  "PhillyJS.model.User": [],
+  "PhillyJS.store.Users": [],
+  "PhillyJS.view.EditUserWindow": [],
   "PhillyJS.view.Main": [],
+  "PhillyJS.view.UserForm": [],
+  "PhillyJS.view.UserGrid": [],
   "PhillyJS.view.Viewport": []
 });
 Ext.ClassManager.addNameAliasMappings({
@@ -1842,9 +1849,22 @@ Ext.ClassManager.addNameAliasMappings({
     "widget.window"
   ],
   "PhillyJS.Application": [],
+  "PhillyJS.controller.AddUser": [],
+  "PhillyJS.controller.EditUser": [],
   "PhillyJS.controller.Main": [],
+  "PhillyJS.model.User": [],
+  "PhillyJS.store.Users": [],
+  "PhillyJS.view.EditUserWindow": [
+    "widget.editUserWindow"
+  ],
   "PhillyJS.view.Main": [
     "widget.app-main"
+  ],
+  "PhillyJS.view.UserForm": [
+    "widget.userForm"
+  ],
+  "PhillyJS.view.UserGrid": [
+    "widget.userGrid"
   ],
   "PhillyJS.view.Viewport": []
 });

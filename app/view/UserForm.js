@@ -13,12 +13,19 @@ Ext.define('PhillyJS.view.UserForm', {
         {
             name: 'firstName',
             fieldLabel: 'First Name',
-            emptyText: 'First Name'
+            emptyText: 'First Name',
+            allowBlank: false
         },
         {
             name: 'lastName',
             fieldLabel: 'Last Name',
-            emptyText: 'Last Name'
+            emptyText: 'Last Name',
+            allowBlank: false
+        },
+        {
+            name: 'email',
+            fieldLabel: 'Email Address',
+            vtype: 'email'
         },
         {
             name: 'dob',
@@ -27,7 +34,8 @@ Ext.define('PhillyJS.view.UserForm', {
         },
         {
             name: 'address1',
-            fieldLabel: 'Address Line 1'
+            fieldLabel: 'Address Line 1',
+            allowBlank: false
         },
         {
             name: 'address2',
@@ -35,20 +43,26 @@ Ext.define('PhillyJS.view.UserForm', {
         },
         {
             name: 'city',
-            fieldLabel: 'City'
+            fieldLabel: 'City',
+            allowBlank: false
         },
         {
             name: 'state',
-            fieldLabel: 'State'
+            fieldLabel: 'State',
+            allowBlank: false
         },
         {
             name: 'zip',
-            fieldLabel: 'Zip'
+            fieldLabel: 'Zip',
+            allowBlank: false,
+            regex: /^\d{5}(?:[-\s]\d{4})?$/,
+            regexText: 'A valid zip code is required'
         },
         {
             xtype: 'button',
             text: 'Save',
-            action: 'save'
+            action: 'save',
+            formBind: true
         }
     ]
 });

@@ -3,6 +3,7 @@ Ext.define('PhillyJS.model.User', {
     fields: [
         {name: 'firstName', type: 'string'},
         {name: 'lastName', type: 'string'},
+        {name: 'email', type: 'string'},
         {name: 'dob', type: 'date'},
         {name: 'address1', type: 'string'},
         {name: 'address2', type: 'string'},
